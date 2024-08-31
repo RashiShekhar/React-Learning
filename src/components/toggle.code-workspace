@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../counter"
+		},
+		{
+			"path": "../../../projects"
+		}
+	],
+	"settings": {}
+}
