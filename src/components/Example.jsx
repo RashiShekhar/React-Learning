@@ -5,13 +5,13 @@ export default function Example() {
 
   var Positionclass = " ";
   if (position === 0) {
-    Positionclass = "left-0 bottom-0  ";
+    Positionclass = "left-0 left-[205px]  ";
   } else if (position === 1) {
-    Positionclass = "bottom-0 right-0 ";
+    Positionclass = "top-0 top-[]";
   } else if (position === 2) {
     Positionclass = "right-0 top-0 ";
   } else if (position === 3) {
-    Positionclass = "top-0 left-0";
+    Positionclass = " left-0 left-30 ";
   }
 
   /* 0 =left
@@ -35,19 +35,19 @@ export default function Example() {
           Left Bottom
         </button>
         <button
-          className="border rounded-md  bg-gray-400 px-3 py-2 text-white hover:bg-black hover:text-white transition-all duration-700 "
+          className="border rounded-md  bg-gray-400 px-3 py-2 text-white hover:bg-black hover:text-white transition-all duration-900 "
           onClick={() => setPosition(1)}
         >
           bottom Right
         </button>
         <button
-          className="border rounded-md  bg-gray-400 px-3 py-2 text-white hover:bg-black hover:text-white transition-all duration-700 "
+          className="border rounded-md  bg-gray-400 px-3 py-2 text-white hover:bg-black hover:text-white transition-all duration-900 "
           onClick={() => setPosition(2)}
         >
           Right Top
         </button>
         <button
-          className="border rounded-md  bg-gray-400 px-3 py-2 text-white hover:bg-black hover:text-white transition-all duration-700 "
+          className="border rounded-md  bg-gray-400 px-3 py-2 text-white hover:bg-black hover:text-white transition-all duration-900 "
           onClick={() => setPosition(3)}
         >
           Top Left

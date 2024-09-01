@@ -10,7 +10,7 @@ export default function ToggleSwitch() {
     >
       <div
         className={`absolute transition-all duration-150 w-6 h-6  flex border rounded-full 
-            ${isToggle2 ? "left-[35px]" : "left-[3px]"}
+            ${isToggle2 ? "left-[35px]" : "left-[3px]"} 
     bg-white top-[2px] animate-none`}
       />
     </div>
