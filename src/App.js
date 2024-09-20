@@ -15,6 +15,11 @@ import Avatar from "./components/Avatar";
 import Breadcrumbs from "./components/Breadcrumbs";
 import ButtonStart from "./components/ButtonStart";
 import Card from "./components/Card";
+import Swap from "./components/Swap";
+import Link from "./components/Link";
+import Stack from "./components/Stack";
+import Join from "./components/Join";
+import TextArea from "./components/TextArea";
 
 export default function App() {
   const [showIndex, setShowIndex] = useState(0);
@@ -94,6 +99,36 @@ export default function App() {
         >
           Show Card
         </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-green-600 text-black"
+          onClick={() => setShowIndex(12)}
+        >
+          Show Swap
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-blue-700 text-black"
+          onClick={() => setShowIndex(13)}
+        >
+          Show Link
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-700 text-black"
+          onClick={() => setShowIndex(14)}
+        >
+          Show Stack
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-orange-700 text-black"
+          onClick={() => setShowIndex(15)}
+        >
+          Show Join
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-gray-400 text-black"
+          onClick={() => setShowIndex(16)}
+        >
+          Show TextArea
+        </button>
       </div>
       {showIndex === 0 ? (
         <div>
@@ -158,6 +193,31 @@ export default function App() {
       {showIndex === 11 ? (
         <div>
           <Card />
+        </div>
+      ) : null}
+      {showIndex === 12 ? (
+        <div>
+          <Swap />
+        </div>
+      ) : null}
+      {showIndex === 13 ? (
+        <div>
+          <Link />
+        </div>
+      ) : null}
+      {showIndex === 14 ? (
+        <div>
+          <Stack />
+        </div>
+      ) : null}
+      {showIndex === 15 ? (
+        <div>
+          <Join />
+        </div>
+      ) : null}
+      {showIndex === 16 ? (
+        <div>
+          <TextArea />
         </div>
       ) : null}
     </div>
