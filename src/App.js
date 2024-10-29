@@ -20,6 +20,23 @@ import Link from "./components/Link";
 import Stack from "./components/Stack";
 import Join from "./components/Join";
 import TextArea from "./components/TextArea";
+import NextPrev from "./components/NextPrev";
+import NavBar from "./components/NavBar";
+import CodeMockup from "./components/CodeMockup";
+import Footer from "./components/Footer";
+import Kbd from "./components/Kbd";
+import Tabs from "./components/Tabs";
+import Loading from "./components/Loading";
+import Skeleton from "./components/Skeleton";
+import Toast from "./components/Toast";
+import Tooltip from "./components/Tooltip";
+import Stat from "./components/Stat";
+import Steps from "./components/Steps";
+import Progress from "./components/Progress";
+import Indicator from "./components/Indicator";
+import Divider from "./components/Divider";
+import Menu from "./components/Menu";
+import Hero from "./components/Hero";
 
 export default function App() {
   const [showIndex, setShowIndex] = useState(0);
@@ -129,6 +146,108 @@ export default function App() {
         >
           Show TextArea
         </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-gray-800 text-black"
+          onClick={() => setShowIndex(17)}
+        >
+          Show NextPrev
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-red-300 text-black"
+          onClick={() => setShowIndex(18)}
+        >
+          Show NavBar
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-green-400 text-black"
+          onClick={() => setShowIndex(19)}
+        >
+          Show CodeMockup
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-violet-200 text-black"
+          onClick={() => setShowIndex(20)}
+        >
+          Show Footer
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-gray-100 text-black"
+          onClick={() => setShowIndex(21)}
+        >
+          Show Kbd
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(22)}
+        >
+          Show Tabs
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(23)}
+        >
+          Show Loading
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(24)}
+        >
+          Show Skeleton
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(25)}
+        >
+          Show Toast
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(26)}
+        >
+          Show Tooltip
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(27)}
+        >
+          Show Stat
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(28)}
+        >
+          Show Steps
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(29)}
+        >
+          Show Progress
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(30)}
+        >
+          Show Indicator
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(31)}
+        >
+          Show Divider
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(32)}
+        >
+          Show Menu
+        </button>
+        <button
+          className="border rounded-lg px-3 py-2 bg-purple-200 text-black"
+          onClick={() => setShowIndex(33)}
+        >
+          Show Hero
+        </button>
       </div>
       {showIndex === 0 ? (
         <div>
@@ -218,6 +337,91 @@ export default function App() {
       {showIndex === 16 ? (
         <div>
           <TextArea />
+        </div>
+      ) : null}
+      {showIndex === 17 ? (
+        <div>
+          <NextPrev />
+        </div>
+      ) : null}
+      {showIndex === 18 ? (
+        <div>
+          <NavBar />
+        </div>
+      ) : null}
+      {showIndex === 19 ? (
+        <div>
+          <CodeMockup />
+        </div>
+      ) : null}
+      {showIndex === 20 ? (
+        <div>
+          <Footer />
+        </div>
+      ) : null}
+      {showIndex === 21 ? (
+        <div>
+          <Kbd />
+        </div>
+      ) : null}
+      {showIndex === 22 ? (
+        <div>
+          <Tabs />
+        </div>
+      ) : null}
+      {showIndex === 23 ? (
+        <div>
+          <Loading />
+        </div>
+      ) : null}
+      {showIndex === 24 ? (
+        <div>
+          <Skeleton />
+        </div>
+      ) : null}
+      {showIndex === 25 ? (
+        <div>
+          <Toast />
+        </div>
+      ) : null}
+      {showIndex === 26 ? (
+        <div>
+          <Tooltip />
+        </div>
+      ) : null}
+      {showIndex === 27 ? (
+        <div>
+          <Stat />
+        </div>
+      ) : null}
+      {showIndex === 28 ? (
+        <div>
+          <Steps />
+        </div>
+      ) : null}
+      {showIndex === 29 ? (
+        <div>
+          <Progress />
+        </div>
+      ) : null}
+      {showIndex === 30 ? (
+        <div>
+          <Indicator />
+        </div>
+      ) : null}
+      {showIndex === 31 ? (
+        <div>
+          <Divider />
+        </div>
+      ) : null}
+      {showIndex === 32 ? (
+        <div>
+          <Menu />
+        </div>
+      ) : null}
+      {showIndex === 33 ? (
+        <div>
+          <Hero />
         </div>
       ) : null}
     </div>
